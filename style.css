@@ -1,7 +1,15 @@
-body{
-    background-color: aquamarine
+body {
+    background-color: aquamarine ;
+    color;
+    text-align: center;
+
 }
 h1{
     font-style: oblique;
     color: darkred;
+}
+
+p{
+    max-width: 1000;
+    
 }
