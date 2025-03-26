@@ -1,17 +1,17 @@
 body {
-    background-color: aquamarine ;
+    background-color: black ;
     color;
     text-align: center;
 
 }
 h1{
-    font-style: oblique;
+    font-style: italic;
     color: darkred;
 }
 
 p{
     max-width: 1000;
-    
+    background-color: red;
 }
 img {
     width: 200;
