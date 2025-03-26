@@ -13,3 +13,7 @@ p{
     max-width: 1000;
     
 }
+img {
+    width: 400;
+    height: auto;
+}
