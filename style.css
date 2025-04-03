@@ -13,7 +13,6 @@ p{
     max-width: 1000;
     background-color: red;
 }
-img {
-    width: 200;
-    height: auto;
+.img {
+    width: 30%,
 }
