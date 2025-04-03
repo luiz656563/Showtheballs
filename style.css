@@ -10,7 +10,7 @@ h1{
 }
 
 p{
-    font-style:oblique
+    font-style:oblique;
     max-width: 1000;
     color: crimson;
 }
