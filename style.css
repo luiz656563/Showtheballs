@@ -5,13 +5,14 @@ body {
 
 }
 h1{
-    font-style: italic;
+    font-style:oblique
     color: darkred;
 }
 
 p{
+    font-style:oblique
     max-width: 1000;
-    background-color: red;
+    color: crimson;
 }
 .img {
     width: 30%,
