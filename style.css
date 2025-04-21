@@ -1,19 +1,52 @@
 body {
-    background-color: black ;
-    color;
-    text-align: center;
+      font-family: Arial, sans-serif;
+        margin: 0;
+          padding: 0;
+            line-height: 1.6;
+              background-color: #f9f9f9;
+                color: #333;
+                }
 
-}
-h1{
-    font-style:oblique;
-    color: brown;
-}
+                header {
+                  background-color: #006837;
+                    color: white;
+                      padding: 1em;
+                        text-align: center;
+                        }
 
-p{
-    font-style:oblique;
-    max-width: 1000;
-    color: crimson;
-}
-.img {
-    width:50%
+                        nav {
+                          background: #e0e0e0;
+                            padding: 1em;
+                              text-align: center;
+                              }
+
+                              nav ul {
+                                list-style: none;
+                                  padding: 0;
+                                  }
+
+                                  nav ul li {
+                                    display: inline;
+                                      margin: 0 15px;
+                                      }
+
+                                      nav a {
+                                        text-decoration: none;
+                                          color: #006837;
+                                            font-weight: bold;
+                                            }
+
+                                            main {
+                                              padding: 2em;
+                                              }
+
+                                              section {
+                                                margin-bottom: 2em;
+                                                }
+
+                                                footer {
+                                                  background: #ddd;
+                                                    text-align: center;
+                                                      padding: 1em;
+                                                      }
 }
