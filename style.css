@@ -1,52 +1,87 @@
+/* style.css */
+
 body {
-      font-family: Arial, sans-serif;
-        margin: 0;
-          padding: 0;
-            line-height: 1.6;
-              background-color: #f9f9f9;
-                color: #333;
+  margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fdf4;
+        color: #1b4332;
+        }
+
+        .container {
+          min-height: 100vh;
+            padding: 2rem;
+            }
+
+            .header {
+              text-align: center;
+                margin-bottom: 3rem;
                 }
 
-                header {
-                  background-color: #006837;
-                    color: white;
-                      padding: 1em;
-                        text-align: center;
+                .title {
+                  font-size: 2.5rem;
+                    font-weight: bold;
+                      color: #1b4332;
+                        margin-bottom: 0.5rem;
                         }
 
-                        nav {
-                          background: #e0e0e0;
-                            padding: 1em;
-                              text-align: center;
-                              }
+                        .subtitle {
+                          font-size: 1.2rem;
+                            color: #2d6a4f;
+                              max-width: 600px;
+                                margin: 0 auto;
+                                }
 
-                              nav ul {
-                                list-style: none;
-                                  padding: 0;
-                                  }
-
-                                  nav ul li {
-                                    display: inline;
-                                      margin: 0 15px;
+                                .cards {
+                                  display: grid;
+                                    gap: 1.5rem;
+                                      grid-template-columns: 1fr;
                                       }
 
-                                      nav a {
-                                        text-decoration: none;
-                                          color: #006837;
-                                            font-weight: bold;
-                                            }
-
-                                            main {
-                                              padding: 2em;
+                                      @media (min-width: 768px) {
+                                        .cards {
+                                            grid-template-columns: repeat(2, 1fr);
+                                              }
                                               }
 
-                                              section {
-                                                margin-bottom: 2em;
-                                                }
-
-                                                footer {
-                                                  background: #ddd;
-                                                    text-align: center;
-                                                      padding: 1em;
+                                              @media (min-width: 1024px) {
+                                                .cards {
+                                                    grid-template-columns: repeat(3, 1fr);
                                                       }
-}
+                                                      }
+
+                                                      .card {
+                                                        background: #ffffff;
+                                                          border-radius: 1.5rem;
+                                                            padding: 1.5rem;
+                                                              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                                                              }
+
+                                                              .card-title {
+                                                                font-size: 1.5rem;
+                                                                  font-weight: 600;
+                                                                    margin-bottom: 0.75rem;
+                                                                      color: #2d6a4f;
+                                                                      }
+
+                                                                      .card-text {
+                                                                        color: #40916c;
+                                                                          font-size: 1rem;
+                                                                          }
+
+                                                                          .footer {
+                                                                            text-align: center;
+                                                                              margin-top: 4rem;
+                                                                              }
+
+                                                                              .participar-button {
+                                                                                background-color: #2d6a4f;
+                                                                                  color: white;
+                                                                                    font-size: 1.125rem;
+                                                                                      padding: 0.75rem 2rem;
+                                                                                        border-radius: 9999px;
+                                                                                          transition: background-color 0.3s ease;
+                                                                                          }
+
+                                                                                          .participar-button:hover {
+                                                                                            background-color: #1b4332;
+                                                                                            }

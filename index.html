@@ -1,75 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Concurso Agrinho 2025 - Programação</title>
-        <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-          <header>
-              <h1>Concurso Agrinho 2025</h1>
-                  <p>Categoria Programação - Rede Pública de Ensino do Paraná</p>
-                    </header>
+import "./style.css";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
-                      <nav>
-                          <ul>
-                                <li><a href="#tema">Tema</a></li>
-                                      <li><a href="#objetivo">Objetivo</a></li>
-                                            <li><a href="#participantes">Participantes</a></li>
-                                                  <li><a href="#subcategorias">Subcategorias</a></li>
-                                                        <li><a href="#etapas">Etapas</a></li>
-                                                              <li><a href="#avaliacao">Critérios</a></li>
-                                                                  </ul>
-                                                                    </nav>
+export default function FestejandoConexao() {
+  return (
+      <div className="container">
+            <header className="header">
+                    <h1 className="title">Festejando a Conexão Campo & Cidade</h1>
+                            <p className="subtitle">
+                                      Celebrando a harmonia entre o rural e o urbano através de cultura, comida, música e comunidade.
+                                              </p>
+                                                    </header>
 
-                                                                      <main>
-                                                                          <section id="tema">
-                                                                                <h2>Tema</h2>
-                                                                                      <p>Festejando a conexão campo cidade</p>
-                                                                                          </section>
+                                                          <section className="cards">
+                                                                  <motion.div whileHover={{ scale: 1.03 }}>
+                                                                            <Card className="card">
+                                                                                        <CardContent>
+                                                                                                      <h2 className="card-title">Sabores do Campo</h2>
+                                                                                                                    <p className="card-text">
+                                                                                                                                    Feiras de produtores locais, culinária orgânica e oficinas de agricultura urbana para aproximar o campo da cidade.
+                                                                                                                                                  </p>
+                                                                                                                                                              </CardContent>
+                                                                                                                                                                        </Card>
+                                                                                                                                                                                </motion.div>
 
-                                                                                              <section id="objetivo">
-                                                                                                    <h2>Objetivo</h2>
-                                                                                                          <p>Incentivar o ensino de tecnologia e programação entre estudantes da rede pública estadual, aplicando habilidades de programação, robótica e pensamento computacional.</p>
-                                                                                                              </section>
+                                                                                                                                                                                        <motion.div whileHover={{ scale: 1.03 }}>
+                                                                                                                                                                                                  <Card className="card">
+                                                                                                                                                                                                              <CardContent>
+                                                                                                                                                                                                                            <h2 className="card-title">Cultura e Tradição</h2>
+                                                                                                                                                                                                                                          <p className="card-text">
+                                                                                                                                                                                                                                                          Apresentações artísticas, rodas de conversa e exposições que valorizam os saberes do campo e a diversidade urbana.
+                                                                                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                                                                                                    </CardContent>
+                                                                                                                                                                                                                                                                                              </Card>
+                                                                                                                                                                                                                                                                                                      </motion.div>
 
-                                                                                                                  <section id="participantes">
-                                                                                                                        <h2>Quem Pode Participar?</h2>
-                                                                                                                              <ul>
-                                                                                                                                      <li>Estudantes do Ensino Fundamental (6º ao 9º ano)</li>
-                                                                                                                                              <li>Estudantes do Ensino Médio (1ª à 3ª série)</li>
-                                                                                                                                                      <li>Matriculados nas trilhas e programas de Programação, Robótica e Pensamento Computacional</li>
-                                                                                                                                                            </ul>
-                                                                                                                                                                </section>
+                                                                                                                                                                                                                                                                                                              <motion.div whileHover={{ scale: 1.03 }}>
+                                                                                                                                                                                                                                                                                                                        <Card className="card">
+                                                                                                                                                                                                                                                                                                                                    <CardContent>
+                                                                                                                                                                                                                                                                                                                                                  <h2 className="card-title">Conexão e Comunidade</h2>
+                                                                                                                                                                                                                                                                                                                                                                <p className="card-text">
+                                                                                                                                                                                                                                                                                                                                                                                Espaços de encontro, troca de experiências e construção de redes solidárias entre agricultores, artistas e moradores urbanos.
+                                                                                                                                                                                                                                                                                                                                                                                              </p>
+                                                                                                                                                                                                                                                                                                                                                                                                          </CardContent>
+                                                                                                                                                                                                                                                                                                                                                                                                                    </Card>
+                                                                                                                                                                                                                                                                                                                                                                                                                            </motion.div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                  </section>
 
-                                                                                                                                                                    <section id="subcategorias">
-                                                                                                                                                                          <h2>Subcategorias</h2>
-                                                                                                                                                                                <ol>
-                                                                                                                                                                                        <li>Scratch - 6º e 7º anos</li>
-                                                                                                                                                                                              <li>Scratch - 8º e 9º anos</li>
-                                                                                                                                                                                                        <li>JavaScript (P5.js) - 1ª série do Ensino Médio</li>
-                                                                                                                                                                                                                <li>HTML e CSS - 2ª e 3ª séries do Ensino Médio</li>
-                                                                                                                                                                                                                      </ol>
-                                                                                                                                                                                                                          </section>
-
-                                                                                                                                                                                                                              <section id="etapas">
-                                                                                                                                                                                                                                    <h2>Etapas do Concurso</h2>
-                                                                                                                                                                                                                                          <ul>
-                                                                                                                                                                                                                                                  <li><strong>Escolar:</strong> até 22/06/2025</li>
-                                                                                                                                                                                                                                                          <li><strong>Regional:</strong> julho de 2025</li>
-                                                                                                                                                                                                                                                                  <li><strong>Estadual:</strong> agosto e setembro de 2025</li>
-                                                                                                                                                                                                                                                                        </ul>
-                                                                                                                                                                                                                                                                            </section>
-
-                                                                                                                                                                                                                                                                                <section id="avaliacao">
-                                                                                                                                                                                                                                                                                      <h2>Critérios de Avaliação</h2>
-                                                                                                                                                                                                                                                                                            <p>Serão avaliados: originalidade, estrutura de código, usabilidade, documentação, complexidade técnica e publicação correta.</p>
-                                                                                                                                                                                                                                                                                                </section>
-                                                                                                                                                                                                                                                                                                  </main>
-
-                                                                                                                                                                                                                                                                                                    <footer>
-                                                                                                                                                                                                                                                                                                        <p>Fonte: <a href="https://www.educacao.pr.gov.br/programacao" target="_blank">programacao.pr.gov.br</a></p>
-                                                                                                                                                                                                                                                                                                          </footer>
-                                                                                                                                                                                                                                                                                                          </body>
-                                                                                                                                                                                                                                                                                                          </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <footer className="footer">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <Button className="participar-button">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          Participe do Festival
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </Button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
